@@ -27,6 +27,7 @@
   .name {
     font-family: var(--header-font);
     font-size: 3.5rem;
+    font-weight: bolder;
 
   }
 
@@ -139,7 +140,7 @@
     width: 100px;
     text-align: center;
     font-size: 1rem;
-    font-family: var(--header-color);
+    font-family: var(--font-family);
     border-radius: 5px;
   }
   footer {
