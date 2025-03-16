@@ -1,0 +1,76 @@
+:root {
+  --header-font: "Montserrat";
+  --paragraph-font: "Cabin";
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  border: 1px thistle gray;
+  background-color: rgb(241, 237, 237);
+  padding: 10px;
+  border-radius: 3px;
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--header-color);
+  margin-bottom: 5px;
+  color: blue;
+  font-weight: bolder;
+}
+
+.prophet-card {
+  border: 1px solid gray;
+  background-color: rgb(152, 176, 176);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.prophet-card p {
+  font-family: var(--paragraph-font);
+  margin-bottom: 5px;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: blue;
+  font-family: var(--header-color);
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: rgb(1, 1, 16);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: 400px;
+}
+
+button:hover {
+  background-color: rgb(101, 205, 101);
+  color: black;
+  border: 1px solid black;
+}
