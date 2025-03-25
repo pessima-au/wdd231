@@ -1,0 +1,145 @@
+[
+  {
+    "id": 1,
+    "name": "Access Bank SL Limited",
+    "address": "30 Siaka Stevens Street, Freetown",
+    "phone": "+232 30 969943",
+    "email": "info@accessbank.com",
+    "website": "https://sierraleone.accessbankplc.com/",
+    "membershipLevel": "Gold",
+    "image": "../images/access.webp",
+    "description": "Access Bank Sierra Leone, established in 2019, is a member of the Access Bank Group, providing financial services to individuals, businesses, and communities in Sierra Leone. They offer a range of services including savings accounts, loans, and digital banking solutions, and are committed to the economic development of the country."
+  },
+  {
+    "id": 2,
+    "name": "Aptech Africa Limited",
+    "address": "148c Wilkinson Road Freetown, Sierra Leone",
+    "phone": "+232 79 164 038",
+    "email": "info@aptechafrica.com",
+    "website": "https://aptechafrica.com/",
+    "membershipLevel": "Silver",
+    "image": "../images/Aptech-Africa.webp",
+    "description": "Aptech Africa Limited is a leading provider of renewable energy solutions in Sierra Leone, offering solar panels, water heaters, pumps, and lighting systems. They are committed to providing affordable and reliable energy solutions that help customers reduce energy costs and protect the environment."
+  },
+  {
+    "id": 3,
+    "name": "Atlantic Lumley Hotel",
+    "address": "Beach Road, Lumley, Freetown",
+    "phone": "+232 80 212121",
+    "email": "info@atlantichotel.com",
+    "website": "https://www.atlantichotel-sl.com/",
+    "membershipLevel": "Gold",
+    "image": "../images/atlantic-lumley-hotel.webp",
+    "description": "Atlantic Lumley Hotel is a luxury hotel in Lumley, Freetown, offering comfortable rooms, fine dining, conference facilities, and recreational activities. Committed to exceptional hospitality, they aim to create memorable experiences for their guests."
+  },
+  {
+    "id": 4,
+    "name": "Balmed Holdings Limited",
+    "address": "2 Africanus Road, Kissy Freetown, Sierra Leone",
+    "phone": "+232 76 625-205",
+    "email": "balmedholdings@yahoo.com",
+    "website": "https://www.balmedholdingssl.com/",
+    "membershipLevel": "Silver",
+    "image": "../images/balmed-holdings-ltd.webp",
+    "description": "Balmed Holdings Limited is a leading distributor of pharmaceutical and healthcare products in Sierra Leone, offering pharmaceuticals, medical supplies, laboratory equipment, and healthcare services. They are committed to providing high-quality products and services to improve public health."
+  },
+  {
+    "id": 5,
+    "name": "Bboxx SL Ltd",
+    "address": "34 Wellington Street Freetown, Sierra Leone",
+    "phone": "+232 77 343183",
+    "email": "info@bboxx.sl.com",
+    "website": "https://www.bboxx.com/",
+    "membershipLevel": "Silver",
+    "image": "../images/Bboxx-SL-Ltd.webp",
+    "description": "Bboxx SL Ltd is a leading provider of solar home systems in Sierra Leone, offering solar panels, batteries, and appliances for clean and affordable energy solutions. They are committed to providing reliable and sustainable energy to improve quality of life and protect the environment."
+  },
+  {
+    "id": 6,
+    "name": "Africell SL Ltd",
+    "address": "Wilberforce Village Freetown, Sierra Leone",
+    "phone": "+232 77 000000",
+    "email": "info@africell.sl",
+    "website": "https://www.africell.sl/",
+    "membershipLevel": "Gold",
+    "image": "../images/africell.webp",
+    "description": "Africell SL Ltd is a leading telecommunications company in Sierra Leone, providing mobile voice and data services, mobile money, and value-added services. They are committed to offering affordable and reliable telecommunications solutions to help customers stay connected and access information."
+  },
+  {
+    "id": 7,
+    "name": "Bennimix Food Co Ltd.",
+    "address": "44 Bathurst Street Freetown, Sierra Leone",
+    "phone": "+232 76 601377",
+    "email": "marzchem@yahoo.com",
+    "website": "https://www.bennimix.com/",
+    "membershipLevel": "Silver",
+    "image": "../images/bennimix.webp",
+    "description": "Bennimix Food Co Ltd. is a leading manufacturer of food products in Sierra Leone, offering flour, pasta, rice, and other food items made with high-quality ingredients. They are committed to providing nutritious and affordable food products to improve public health."
+  },
+  {
+    "id": 8,
+    "name": "Bintumani Hotel",
+    "address": "11 Man 'O' War Bay, Aberdeen, Freetown, Sierra Leone",
+    "phone": "+232 76 748407",
+    "email": "marzchem@yahoo.com",
+    "website": "http://www.bintumanihotelfreetown.online/",
+    "membershipLevel": "Gold",
+    "image": "../images/bintumani.webp",
+    "description": "Bintumani Hotel is a luxury hotel in Aberdeen, Freetown, offering comfortable rooms, fine dining, conference facilities, and recreational activities. Committed to exceptional hospitality, they aim to create memorable experiences for their guests."
+  },
+  {
+    "id": 9,
+    "name": "Easy Solar",
+    "address": "48 Hill Station Road, Freetown, Sierra Leone",
+    "phone": "+232 99 444888",
+    "email": "easysolar@gmail.com",
+    "website": "https://easysolar.org/",
+    "membershipLevel": "Gold",
+    "image": "../images/Easy-Solar.webp",
+    "description": "Easy Solar is a leading provider of solar home systems in Sierra Leone, offering solar panels, batteries, and appliances for clean and affordable energy solutions. They are committed to providing reliable and sustainable energy to improve the quality of life and protect the environment."
+  },
+  {
+    "id": 10,
+    "name": "EnerGen WAO",
+    "address": "7A Cantonment Road, Freetown, Sierra Leone",
+    "phone": "+232 88 209971",
+    "email": "energen@gmail.com",
+    "website": "https://energenwao.com/",
+    "membershipLevel": "Gold",
+    "image": "../images/EnerGen-WAO.webp",
+    "description": "EnerGen WAO is a leading provider of renewable energy solutions in Sierra Leone, offering solar panels, solar water heaters, solar pumps, and solar lighting systems. They are committed to providing affordable and reliable energy solutions that help customers reduce energy costs and improve their quality of life."
+  },
+  {
+    "id": 11,
+    "name": "Helios Solutions",
+    "address": "10 Wallace Johnson street, Freetown, Sierra Leone",
+    "phone": "+232 79 831079",
+    "email": "helios@hotmail.com",
+    "website": "https://helios-solutions.net/",
+    "membershipLevel": "Gold",
+    "image": "../images/Helios-Solutions.webp",
+    "description": "Helios Solutions is a leading provider of solar home systems in Sierra Leone, offering solar panels, batteries, and appliances for clean and affordable energy solutions. They are committed to providing reliable and sustainable energy solutions to improve quality of life and reduce energy costs."
+  },
+  {
+    "id": 12,
+    "name": "INSONS",
+    "address": "52 Siaka Stevens Street, Freetown, Sierra Leone",
+    "phone": "+232 77 585936",
+    "email": "insons@hotmail.com",
+    "website": "https://www.insons.net/",
+    "membershipLevel": "Gold",
+    "image": "../images/INSONS.webp",
+    "description": "INSONS is a leading provider of renewable energy solutions in Sierra Leone, offering solar panels, solar water heaters, solar pumps, and solar lighting systems. They are committed to providing affordable and reliable energy solutions that help customers reduce energy costs, improve their quality of life, and protect the environment."
+  },
+  {
+    "id": 13,
+    "name": "Leecon Poultry",
+    "address": "Macdonald Village, Sierra Leone",
+    "phone": "+232 76 686526",
+    "email": "leeconpoultry@gmail.com",
+    "website": "https://www.leeconpoultry.com/",
+    "membershipLevel": "Member",
+    "image": "../images/leecon-poultry.webp",
+    "description": "Leecon Poultry is a leading producer of poultry products in Sierra Leone, offering chicken, eggs, and poultry feed produced using high-quality ingredients and modern farming practices. They are committed to providing nutritious and affordable poultry products to improve public health."
+  }
+]

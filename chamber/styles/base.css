@@ -1,0 +1,370 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C3E50;
+    color: white;
+    position: relative;
+}
+
+#logo {
+    margin-left: 30px;
+}
+
+#logo .text {
+    margin-top: -18px;
+    align-items:flex-start;
+    justify-content:center;
+}
+
+#logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+#logo img {
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+}
+
+.big-text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.small-text {
+    font-size: 15px;
+}
+
+/* Navigation */
+.navigation {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation a:hover {
+    background-color: #a4a62b;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+}
+
+.main-header {
+    text-align: center;
+    margin: 25px; 
+}
+
+#view-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#view-buttons button {
+    background-color: #2C3E50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#theme.theme-toggle {
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: none;
+    align-self: center;
+    justify-self: end;
+    margin-right: 80px;
+    margin-bottom: 0;
+}
+
+#theme.theme-toggle::before {
+    content: url(../images/toggle_off.png);
+    display: block;
+}
+
+#theme.theme-toggle.active::before {
+    content: url(../images/toggle_on.png);
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-theme .card {
+    background-color: #2d2d2d;
+    border-color: #404040;
+}
+
+body.dark-theme header,
+body.dark-theme footer {
+    background-color: #121212;
+}
+
+/* Hamburger Menu */
+#menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+#cards.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgb(195, 177, 154);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card > * {
+    padding: 1px;
+    
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card a {
+    color: black;
+}
+
+
+/* List View */
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list .card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 95dvw;
+}
+
+.list .card > * {
+   margin: 0; 
+    padding: 0.5rem; 
+    text-align: center;
+}
+
+.list .card img {
+    display: none; 
+}
+
+.list .card h2 {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.list .membership {
+    display: none;
+}
+
+
+/* Even Row Background */
+.list .card:nth-child(even) {
+    background-color: #429d49;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #2C3E50;
+    color: white;
+}
+
+footer .social ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+.address a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    #menu {
+        position: static;
+        order:  -1;
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    .navigation {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        margin-top: 25px;
+        padding-bottom: 1rem;
+        z-index: 1; 
+        height: auto;
+         height: fit-content;
+        margin-bottom: 0;
+    }
+
+    .navigation a:hover {
+        background-color: #58c3cb;
+        font-weight: 700;
+    }
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "X";
+        color: white;
+    }
+
+    header {
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+     .navigation.active {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        position:static;
+        width: 100%;
+        background-color: #686f35;
+        text-align: center;
+        margin-top: 25px;
+        padding:  10px 0;
+       
+    }
+
+    .navigation a {
+        padding: 10px;
+    }
+
+    .list .card{
+    display: flex;
+    flex-direction: row; 
+    align-items:flex-start;
+    justify-content:space-evenly;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 95dvw;
+}
+
+  footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+     .address .social .copy {
+    margin-bottom: 25px;
+}
+ footer .social ul {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+}
+
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .address .social .copy {
+    margin-bottom: 25px;
+}
+
+    footer .social ul {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1050px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .address .social .copy {
+    margin-bottom: 25px;
+}
+
+    footer .social ul {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}

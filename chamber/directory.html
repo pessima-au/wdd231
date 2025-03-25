@@ -22,34 +22,47 @@
         <link rel="stylesheet" href="./styles/normalize.css">
         <link rel="stylesheet" href="./styles/base.css">
         <link rel="stylesheet" href="./styles/large.css">
+        <link rel="preload" href="./images/slcc-logo.png" as="image">
         <script src="./scripts/directory.js" defer></script>
 
         <title>Sierra Leone Chamber of Commerce</title>
+
     </head>
 
     <body>
         <header>
-            <button id="menu"></button>
+            <button id="menu" name="menu-btn"></button>
             <div id="logo">
                 <a href="index.html" class="logo">
-                    <img src="./images/slcc-logo.png" alt="Sierra Leone Chamber of Commerce Logo" width="75px"
-                        height="75px"></a>
-                <h1 class="big-text">Sierra Leone <br><span class="small-text">Chamber of Commerce</span></h1>
+                    <img src="./images/slcc-logo.png" alt="Sierra Leone Chamber of Commerce Logo" width="65"
+                        height="65">
+                    <div class="text">
+                        <h1 class="big-text">Sierra Leone</h1>
+                        <span class="small-text">Chamber of Commerce</span>
+                    </div>
+                </a>
             </div>
             <nav class="navigation">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Directory</a></li>
-                    <li><a href="#">Join</a></li>
-                    <li><a href="#">Discover</a></li>
-                </ul>
+
+                <a href="#">Home</a>
+                <a href="#">Directory</a>
+                <a href="#">Join</a>
+                <a href="#">Discover</a>
             </nav>
-            <div class="theme"></div>
+            <div id="theme" class="theme-toggle"></div>
         </header>
+        <main>
+            <h2 class="main-header">Directory of Businesses</h2>
+            <div id="view-buttons">
+                <button id="grid">⏹️Grid</button>
+                <button id="list">📄List</button>
+            </div>
+            <div id="cards" class="grid"></div>
+        </main>
         <footer>
             <div class="address">
+                <h2>Sierra Leone Chamber of Commerce</h2>
                 <address>
-                    <h2>Sierra Leone Chamber of Commerce</h2>
                     1 Short Street<br>
                     Freetown, Sierra Leone<br>
                     <a href="mailto:info@slcm.org">info@slcm.org</a><br>
@@ -58,19 +71,20 @@
             </div>
             <div class="social">
                 <ul>
-                    <li><a href="https://www.facebook.com/sierraleonechamberofcommerce" target="_blank"><img
-                                src="images/facebook-square-brands-solid.svg" alt="Facebook logo" width="70px"
-                                height="70px"></a></li>
-                    <li><a href="https://Youtube.com/slcc_chamber" target="_blank"><img
-                                src="images/youtube-square-brands-solid.svg" alt="Youtube logo" width="70px"
-                                height="70px"></a></li>
-                    <li><a href="https://www.linkedin.com/company/sierra-leone-chamber-of-commerce/"
-                            target="_blank"><img src="images/linkedin-brands-solid.svg" alt="Linkedin logo" width="70px"
-                                height="70px"></a></li>
+                    <li><a href="https://www.facebook.com/sierraleonechamberofcommerce" target="_blank">
+                            <img src="images/facebook-square-brands-solid.svg" alt="Facebook logo" width="40"
+                                height="40">
+                        </a></li>
+                    <li><a href="https://Youtube.com/slcc_chamber" target="_blank">
+                            <img src="images/youtube-square-brands-solid.svg" alt="Youtube logo" width="40" height="40">
+                        </a></li>
+                    <li><a href="https://www.linkedin.com/company/sierra-leone-chamber-of-commerce/" target="_blank">
+                            <img src="images/linkedin-brands-solid.svg" alt="Linkedin logo" width="40" height="40">
+                        </a></li>
                 </ul>
             </div>
             <div class="copy">
-                <p>WDD231 Class Project</p><br>
+                <p>WDD231 Class Project</p>
                 <p>Albert Pessima</p>
                 <p>©<span id="currentYear"></span> Sierra Leone Chamber of Commerce</p>
                 <p id="lastModified"></p>
