@@ -10,8 +10,8 @@
         <meta property="og:title" content="Web Frontend Development Course Project Page">
         <meta property="og:type" content="website">
         <meta property="og:image"
-            content="https://raw.githubusercontent.com/pessima-au/wdd231/main/images/freetown_sl.png">
-        <meta property="og:url" content="https://pessima-au.github.io/wdd231/">
+            content="./images/freetown.webp">
+        <meta property="og:url" content="./directory.html">
 
         <link rel="preload"
             href="https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2"
@@ -19,33 +19,16 @@
         <link rel="preload"
             href="https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXp-p7K4KLg.woff2"
             as="font" type="font/woff2" crossorigin>
-
-        <style>
-            /* Extract the critical styles from base.css and large.css */
-            body {
-                font-family: 'Montserrat', sans-serif;
-                background: #fff;
-            }
-        
-            h1 {
-                font-size: 2rem;
-            }
-        </style>
-
-
         <link rel="icon" href="./images/favicon.ico">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 
+        <link rel="stylesheet" href="./styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css" media="print" onload="this.onload=null;this.media='all';">
         <link rel="stylesheet" href="styles/large.css" media="print" onload="this.onload=null;this.media='all';">
 
-
-        <link rel="stylesheet" href="./styles/normalize.css">
-        <!-- <link rel="stylesheet" href="./styles/base.css">
-        <link rel="stylesheet" href="./styles/large.css"> -->
         <link rel="preload" href="./images/slcc-logo.webp" as="image">
         <script src="./scripts/directory.js" defer></script>
 
@@ -61,7 +44,7 @@
                     <img src="./images/slcc-logo.webp" alt="Sierra Leone Chamber of Commerce Logo" width="65"
                         height="65">
                     <div class="text">
-                        <h1 class="big-text">Sierra Leone</h1>
+                        <p class="big-text">Sierra Leone</p>
                         <span class="small-text">Chamber of Commerce</span>
                     </div>
                 </a>
@@ -76,7 +59,7 @@
             <div id="theme" class="theme-toggle"></div>
         </header>
         <main>
-            <h2 class="main-header">Directory of Businesses</h2>
+            <h1 class="main-header">Directory of Businesses</h1>
             <div id="view-buttons">
                 <button id="grid" aria-label="Switch to grid view">⏹️Grid</button>
                 <button id="list" aria-label="Switch to list view">📄List</button>
