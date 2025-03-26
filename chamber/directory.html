@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="./styles/normalize.css">
         <link rel="stylesheet" href="./styles/base.css">
         <link rel="stylesheet" href="./styles/large.css">
-        <link rel="preload" href="./images/slcc-logo.png" as="image">
+        <link rel="preload" href="./images/slcc-logo.webp" as="image">
         <script src="./scripts/directory.js" defer></script>
 
         <title>Sierra Leone Chamber of Commerce</title>
@@ -31,10 +31,10 @@
 
     <body>
         <header>
-            <button id="menu" name="menu-btn"></button>
+            <button id="menu" aria-label="Toggle navigation menu"></button>
             <div id="logo">
                 <a href="index.html" class="logo">
-                    <img src="./images/slcc-logo.png" alt="Sierra Leone Chamber of Commerce Logo" width="65"
+                    <img src="./images/slcc-logo.webp" alt="Sierra Leone Chamber of Commerce Logo" width="65"
                         height="65">
                     <div class="text">
                         <h1 class="big-text">Sierra Leone</h1>
@@ -54,20 +54,18 @@
         <main>
             <h2 class="main-header">Directory of Businesses</h2>
             <div id="view-buttons">
-                <button id="grid">⏹️Grid</button>
-                <button id="list">📄List</button>
+                <button id="grid" aria-label="Switch to grid view">⏹️Grid</button>
+                <button id="list" aria-label="Switch to list view">📄List</button>
             </div>
             <div id="cards" class="grid"></div>
         </main>
         <footer>
             <div class="address">
                 <h2>Sierra Leone Chamber of Commerce</h2>
-                <address>
-                    1 Short Street<br>
-                    Freetown, Sierra Leone<br>
-                    <a href="mailto:info@slcm.org">info@slcm.org</a><br>
-                    <a href="tel:+232-76-123-456">+232-76-123-456</a>
-                </address>
+                    <p>1 Short Street</p>
+                    <p>Freetown, Sierra Leone</p>
+                    <p>info@slcm.org</p>
+                    <p>+232-76-123-456</p>
             </div>
             <div class="social">
                 <ul>
