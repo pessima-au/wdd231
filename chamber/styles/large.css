@@ -1,0 +1,105 @@
+#cards.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  #menu {
+    position: static;
+    order: -1;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .navigation {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 1rem;
+    z-index: 1;
+    height: auto;
+    height: fit-content;
+    margin-bottom: 0;
+  }
+
+  .navigation a:hover {
+    background-color: #58c3cb;
+    font-weight: 700;
+  }
+  #menu::before {
+    content: "☰";
+  }
+
+  #menu.open::before {
+    content: "X";
+    color: white;
+  }
+
+  header {
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+
+  .navigation.active {
+    order: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: static;
+    width: 100%;
+    background-color: #686f35;
+    text-align: center;
+    margin-top: 25px;
+    padding: 10px 0;
+  }
+
+  .navigation a {
+    padding: 10px;
+  }
+
+  .list .card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 95dvw;
+  }
+}
+
+@media (max-width: 1048px) {
+   .address, .social, .copy {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1049px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .address, .social, .copy {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}

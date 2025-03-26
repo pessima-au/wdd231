@@ -20,15 +20,32 @@
             href="https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXp-p7K4KLg.woff2"
             as="font" type="font/woff2" crossorigin>
 
+        <style>
+            /* Extract the critical styles from base.css and large.css */
+            body {
+                font-family: 'Montserrat', sans-serif;
+                background: #fff;
+            }
+        
+            h1 {
+                font-size: 2rem;
+            }
+        </style>
+
+
         <link rel="icon" href="./images/favicon.ico">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 
+        <link rel="stylesheet" href="styles/base.css" media="print" onload="this.onload=null;this.media='all';">
+        <link rel="stylesheet" href="styles/large.css" media="print" onload="this.onload=null;this.media='all';">
+
+
         <link rel="stylesheet" href="./styles/normalize.css">
-        <link rel="stylesheet" href="./styles/base.css">
-        <link rel="stylesheet" href="./styles/large.css">
+        <!-- <link rel="stylesheet" href="./styles/base.css">
+        <link rel="stylesheet" href="./styles/large.css"> -->
         <link rel="preload" href="./images/slcc-logo.webp" as="image">
         <script src="./scripts/directory.js" defer></script>
 

@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -14,7 +14,7 @@ body {
     "wdth" 100;
   max-width: 100%;
   overflow-x: hidden;
-}
+} */
 
 h1, h2, h3, .navigation, #logo {
    font-family: "Montserrat", sans-serif;
@@ -156,12 +156,12 @@ body.dark-theme footer {
   cursor: pointer;
 }
 
-#cards.grid {
+/* #cards.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
-}
+} */
 
 .card {
   background-color: rgb(195, 177, 154);
@@ -268,7 +268,7 @@ footer .social ul {
   margin-left: 20px;
   font-size: 1.2rem;
 }
-
+/* 
 @media (max-width: 768px) {
   #menu {
     position: static;
@@ -337,9 +337,9 @@ footer .social ul {
     margin-bottom: 0.5rem;
     width: 95dvw;
   }
-}
+} */
 
-@media (max-width: 1048px) {
+/* @media (max-width: 1048px) {
    .address, .social, .copy {
     margin-bottom: 25px;
     display: flex;
@@ -367,4 +367,4 @@ footer .social ul {
     margin-right: 25px;
   }
 
-}
+} */
