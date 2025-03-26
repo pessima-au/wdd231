@@ -6,9 +6,21 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+h1, h2, h3, .navigation, #logo {
+   font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Header */
@@ -156,20 +168,14 @@ body.dark-theme footer {
   padding: 15px;
   border-radius: 8px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  box-sizing: border-box;
 }
 
-.card > * {
-  padding: 1px;
-}
-
-.card p,
-a {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 1.2rem;
+.card-address, .membership, .phone, .website {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1rem;
+  margin-left: 0;
 }
 
 .card img {
@@ -178,8 +184,8 @@ a {
   object-fit: cover;
   border-radius: 5px;
   box-sizing: border-box;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .card h2 {
@@ -201,7 +207,7 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   flex-direction: row;
-  /* align-items: center; */
+  align-items: center;
   padding: 0.5rem;
   margin-bottom: 0;
   width: 100%;
