@@ -54,7 +54,20 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 90px);
     margin-bottom: 15px;
+     /* gap: 20px;
+  padding: 20px;
+  margin-bottom: 15px */
+
+     /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(4, 90px);
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 15px */
   }
+
+  
+
   .home {
     margin-left: 15px;
   }

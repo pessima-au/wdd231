@@ -1,8 +1,3 @@
-document.addEventListener("visibilitychange", () => {
-  if (document.hidden && socket.readyState === WebSocket.OPEN) {
-    socket.close();
-  }
-});
 
 
 // Last Modified Date
@@ -34,13 +29,6 @@ gridButton.addEventListener("click", () => {
 listButton.addEventListener("click", () => {
   cards.classList.add("list");
   cards.classList.remove("grid");
-});
-
-// Dark Mode Toggle
-const themeToggle = document.querySelector("#theme");
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark-theme");
-  themeToggle.classList.toggle("active");
 });
 
 // Fetch Members Data

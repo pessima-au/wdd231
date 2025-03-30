@@ -27,12 +27,13 @@
         <link rel="stylesheet" href="./styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css" media="print" onload="this.onload=null;this.media='all';">
         <link rel="stylesheet" href="styles/large.css" media="print" onload="this.onload=null;this.media='all';">
+        <link rel="stylesheet" href="./styles/home.css" media="print" onload="this.onload=null;this.media='all';">
 
         <link rel="preload" href="./images/slcc-logo.webp" as="image">
         <script src="./scripts/theme.js" defer></script>
-        <script src="./scripts/directory.js" defer></script>
+        <script src="./scripts/home.js" defer></script>
 
-        <title>Sierra Leone Chamber of Commerce - Directory of Businesses</title>
+        <title>Sierra Leone Chamber of Commerce</title>
 
     </head>
 
@@ -50,21 +51,42 @@
                 </a>
             </div>
             <nav class="navigation">
-
-                <a href="./index.html">Home</a>
-                <a href="./directory.html" class="active">Directory</a>
+                <a href="index.html" class="active">Home</a>
+                <a href="./directory.html">Directory</a>
                 <a href="#">Join</a>
                 <a href="#">Discover</a>
             </nav>
             <div id="theme" class="theme-toggle"></div>
         </header>
-        <main>
-            <h1 class="main-header">Directory of Businesses</h1>
-            <div id="view-buttons">
-                <button id="grid" aria-label="Switch to grid view">⏹️Grid</button>
-                <button id="list" aria-label="Switch to list view">📄List</button>
-            </div>
-            <div id="cards" class="grid"></div>
+        <main id="home-page">
+            <section class="hero">
+                <img src="./images/freetown.webp" alt="">
+                <button ><a class="cta-button" href="https://example.com">Keynote Tickets</a></button>
+            </section>
+            <h1>Home</h1>
+            <section id="weather">
+                <div class="events">
+                    <h2>Events</h2>
+                    <ul>
+                        <li><strong>Networking Mixer:</strong> Join us for an evening of networking with local business leaders. - March 15,
+                            2025, 6:00 PM - 8:00 PM at the Radisson Blu Mammy Yoko Hotel.</li>
+                        <li><strong>Business Workshop:</strong> Learn strategies for growth and success in the Sierra Leone market. - April 5,
+                            2025, 9:00 AM - 12:00 PM at the Chamber of Commerce Headquarters.</li>
+                        <li><strong>Annual Gala:</strong> Celebrate the achievements of our members at our annual gala. - May 20, 2025, 7:00
+                            PM - 11:00 PM at the Bintumani Conference Centre.</li>
+                        <li><strong>Tech Summit:</strong> Discover the latest technological advancements and their impact on business. - June
+                            10, 2025, 10:00 AM - 4:00 PM at the Freetown International Conference Center.</li>
+                    </ul>
+                </div>
+                    <div class="current"></div>
+                    <div class="forecast">
+                       
+                    </div>
+            </section>
+            <section id="business">
+                <div id="biz-cards"></div>
+            </section>
+
         </main>
         <footer>
             <div class="address">
@@ -77,8 +99,7 @@
             <div class="social">
                 <ul>
                     <li><a href="https://www.facebook.com/sierraleonechamberofcommerce" target="_blank">
-                            <img src="images/facebook-logo.svg" alt="Facebook logo" width="40"
-                                height="40">
+                            <img src="images/facebook-logo.svg" alt="Facebook logo" width="40" height="40">
                         </a></li>
                     <li><a href="https://Youtube.com/slcc_chamber" target="_blank">
                             <img src="images/youtube-logo.svg" alt="Youtube logo" width="40" height="40">

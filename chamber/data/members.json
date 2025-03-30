@@ -8,6 +8,7 @@
     "website": "https://sierraleone.accessbankplc.com/",
     "membershipLevel": "Gold",
     "image": "images/access.webp",
+    "tagline": "Empowering your financial future.",
     "description": "Access Bank Sierra Leone, established in 2019, is a member of the Access Bank Group, providing financial services to individuals, businesses, and communities in Sierra Leone. They offer a range of services including savings accounts, loans, and digital banking solutions, and are committed to the economic development of the country."
   },
   {
@@ -19,6 +20,7 @@
     "website": "https://aptechafrica.com/",
     "membershipLevel": "Silver",
     "image": "images/Aptech-Africa.webp",
+    "tagline": "Sustainable energy for a brighter future.",
     "description": "Aptech Africa Limited is a leading provider of renewable energy solutions in Sierra Leone, offering solar panels, water heaters, pumps, and lighting systems. They are committed to providing affordable and reliable energy solutions that help customers reduce energy costs and protect the environment."
   },
   {
@@ -30,6 +32,7 @@
     "website": "https://www.atlantichotel-sl.com/",
     "membershipLevel": "Gold",
     "image": "images/atlantic-lumley-hotel.webp",
+    "tagline": "Luxury and comfort by the sea.",
     "description": "Atlantic Lumley Hotel is a luxury hotel in Lumley, Freetown, offering comfortable rooms, fine dining, conference facilities, and recreational activities. Committed to exceptional hospitality, they aim to create memorable experiences for their guests."
   },
   {
@@ -41,6 +44,7 @@
     "website": "https://www.balmedholdingssl.com/",
     "membershipLevel": "Silver",
     "image": "images/balmed-holdings-ltd.webp",
+    "tagline": "Your trusted healthcare partner.",
     "description": "Balmed Holdings Limited is a leading distributor of pharmaceutical and healthcare products in Sierra Leone, offering pharmaceuticals, medical supplies, laboratory equipment, and healthcare services. They are committed to providing high-quality products and services to improve public health."
   },
   {
@@ -52,6 +56,7 @@
     "website": "https://www.bboxx.com/",
     "membershipLevel": "Silver",
     "image": "images/Bboxx-SL-Ltd.webp",
+    "tagline": "Powering lives with clean energy.",
     "description": "Bboxx SL Ltd is a leading provider of solar home systems in Sierra Leone, offering solar panels, batteries, and appliances for clean and affordable energy solutions. They are committed to providing reliable and sustainable energy to improve quality of life and protect the environment."
   },
   {
@@ -63,6 +68,7 @@
     "website": "https://www.africell.sl/",
     "membershipLevel": "Gold",
     "image": "images/africell.webp",
+    "tagline": "Stay connected, stay ahead.",
     "description": "Africell SL Ltd is a leading telecommunications company in Sierra Leone, providing mobile voice and data services, mobile money, and value-added services. They are committed to offering affordable and reliable telecommunications solutions to help customers stay connected and access information."
   },
   {
@@ -74,6 +80,7 @@
     "website": "https://www.bennimix.com/",
     "membershipLevel": "Silver",
     "image": "images/bennimix.webp",
+    "tagline": "Nutritious food for a healthier future.",
     "description": "Bennimix Food Co Ltd. is a leading manufacturer of food products in Sierra Leone, offering flour, pasta, rice, and other food items made with high-quality ingredients. They are committed to providing nutritious and affordable food products to improve public health."
   },
   {
@@ -85,6 +92,7 @@
     "website": "http://www.bintumanihotelfreetown.online/",
     "membershipLevel": "Gold",
     "image": "images/bintumani.webp",
+    "tagline": "Experience comfort and luxury.",
     "description": "Bintumani Hotel is a luxury hotel in Aberdeen, Freetown, offering comfortable rooms, fine dining, conference facilities, and recreational activities. Committed to exceptional hospitality, they aim to create memorable experiences for their guests."
   },
   {
@@ -96,6 +104,7 @@
     "website": "https://easysolar.org/",
     "membershipLevel": "Gold",
     "image": "images/Easy-Solar.webp",
+    "tagline": "Brightening homes, empowering lives.",
     "description": "Easy Solar is a leading provider of solar home systems in Sierra Leone, offering solar panels, batteries, and appliances for clean and affordable energy solutions. They are committed to providing reliable and sustainable energy to improve the quality of life and protect the environment."
   },
   {
@@ -107,6 +116,7 @@
     "website": "https://energenwao.com/",
     "membershipLevel": "Gold",
     "image": "images/EnerGen-WAO.webp",
+    "tagline": "Renewable energy for a sustainable future.",
     "description": "EnerGen WAO is a leading provider of renewable energy solutions in Sierra Leone, offering solar panels, solar water heaters, solar pumps, and solar lighting systems. They are committed to providing affordable and reliable energy solutions that help customers reduce energy costs and improve their quality of life."
   },
   {
@@ -118,6 +128,7 @@
     "website": "https://helios-solutions.net/",
     "membershipLevel": "Gold",
     "image": "images/Helios-Solutions.webp",
+    "tagline": "Innovative solar solutions for all.",
     "description": "Helios Solutions is a leading provider of solar home systems in Sierra Leone, offering solar panels, batteries, and appliances for clean and affordable energy solutions. They are committed to providing reliable and sustainable energy solutions to improve quality of life and reduce energy costs."
   },
   {
@@ -129,6 +140,7 @@
     "website": "https://www.insons.net/",
     "membershipLevel": "Gold",
     "image": "images/INSONS.webp",
+    "tagline": "Your reliable energy partner.",
     "description": "INSONS is a leading provider of renewable energy solutions in Sierra Leone, offering solar panels, solar water heaters, solar pumps, and solar lighting systems. They are committed to providing affordable and reliable energy solutions that help customers reduce energy costs, improve their quality of life, and protect the environment."
   },
   {
@@ -140,6 +152,7 @@
     "website": "https://www.leeconpoultry.com/",
     "membershipLevel": "Member",
     "image": "images/leecon-poultry.webp",
+    "tagline": "Fresh poultry, quality you can trust.",
     "description": "Leecon Poultry is a leading producer of poultry products in Sierra Leone, offering chicken, eggs, and poultry feed produced using high-quality ingredients and modern farming practices. They are committed to providing nutritious and affordable poultry products to improve public health."
   }
 ]
