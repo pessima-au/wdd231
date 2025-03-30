@@ -201,7 +201,7 @@ list-style-type: disc;
   grid-column: 2/3;
   grid-row: 1/2;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: left;
   list-style: none;
