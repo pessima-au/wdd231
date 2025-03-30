@@ -153,7 +153,7 @@ list-style-type: disc;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   border: 1px solid gray;
   box-sizing: border-box;
-  height: 220px;
+  height: fit-content;
 }
 
 .address,
@@ -205,6 +205,9 @@ list-style-type: disc;
   flex-direction: column;
   justify-content: left;
   list-style: none;
+  width: 100%;
+ overflow-wrap: break-word; 
+  word-break: break-word; 
 }
 
 .card-info p {
