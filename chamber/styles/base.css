@@ -286,3 +286,10 @@ footer .social ul {
 #lastModified {
   color: yellow;
 }
+
+@media (max-width: 430px) {
+    #theme {
+     display: none;
+  
+    }
+}

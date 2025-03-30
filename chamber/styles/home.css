@@ -279,3 +279,10 @@ body.dark-theme #weather {
     grid-column: span 1;
   }
 }
+
+/* @media (max-width: 430px) {
+    #theme {
+     display: none;
+  
+    }
+} */
