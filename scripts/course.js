@@ -73,35 +73,66 @@ let wdd = document.querySelector(".wdd");
 let courseList = document.querySelector("#courses");
 
 function displayAll(courses) {
-  courses.forEach(course => {
-      let backgroundColor = course.completed ? "#e1b067" : "#ffffff";
-      courseList.innerHTML += `
-      <div class="course">
-        <button style="background-color: ${backgroundColor}">${course.subject} ${course.number}</button>
-      </div>`;
-    })
+  courses.forEach((course) => {
+    let backgroundColor = course.completed ? "#e1b067" : "#ffffff";
+
+    const courseDiv = document.createElement("div");
+    courseDiv.className = "course";
+
+    const button = document.createElement("button");
+    button.style.backgroundColor = backgroundColor;
+    button.textContent = `${course.subject} ${course.number}`;
+
+    button.addEventListener("click", () => {
+      diplayCourseDetails(course);
+    });
+
+    courseDiv.appendChild(button);
+
+    courseList.appendChild(courseDiv);
+  });
 }
 
 function displayCse(courses) {
-    courses.forEach(course => {
-      if (course.subject === "CSE") {
-        let backgroundColor = course.completed ? "#e1b067" : "#ffffff";
-        courseList.innerHTML += `
-        <div class="course">
-          <button style="background-color: ${backgroundColor}">${course.subject} ${course.number}</button>
-        </div>`;
-      }
-    });
+  courses.forEach((course) => {
+    if (course.subject === "CSE") {
+      let backgroundColor = course.completed ? "#e1b067" : "#ffffff";
+
+      const courseDiv = document.createElement("div");
+      courseDiv.className = "course";
+
+      const button = document.createElement("button");
+      button.style.backgroundColor = backgroundColor;
+      button.textContent = `${course.subject} ${course.number}`;
+
+      button.addEventListener("click", () => {
+        diplayCourseDetails(course);
+      });
+
+      courseDiv.appendChild(button);
+      courseList.appendChild(courseDiv);
+    }
+  });
 }
 
 function displayWdd(courses) {
-  courses.forEach(course => {
+  courses.forEach((course) => {
     if (course.subject === "WDD") {
       let backgroundColor = course.completed ? "#e1b067" : "#ffffff";
-      courseList.innerHTML += `
-      <div class="course">
-        <button style="background-color: ${backgroundColor}">${course.subject} ${course.number}</button>
-      </div>`;
+
+      const courseDiv = document.createElement("div");
+      courseDiv.className = "course";
+
+      const button = document.createElement("button");
+      button.style.backgroundColor = backgroundColor;
+      button.textContent = `${course.subject} ${course.number}`;
+
+      button.addEventListener("click", () => {
+        diplayCourseDetails(course);
+      });
+
+      courseDiv.appendChild(button);
+      courseList.appendChild(courseDiv);
     }
   });
 }
@@ -120,3 +151,24 @@ wdd.addEventListener("click", () => {
   courseList.innerHTML = "";
   displayWdd(courses);
 });
+
+
+function diplayCourseDetails(course) {
+  const courseDetails = document.querySelector("#course-details");
+  courseDetails.innerHTML = '';
+  courseDetails.innerHTML = `
+  <button id="closeModal">❌</button>
+  <h2>${course.subject} ${course.number}</h2>
+  <h3>${course.title}</h3>
+  <p><strong>Credits</strong>: ${course.credits}</p>
+  <p><strong>Certificate</strong>: ${course.certificate}</p>
+  <p>${course.description}</p>
+  <p><strong>Tenologies</strong>: ${course.technology}</p>
+  `;
+
+  courseDetails.showModal();
+
+  closeModal.addEventListener('click', () => {
+    courseDetails.close();
+  })
+}

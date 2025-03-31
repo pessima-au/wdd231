@@ -223,4 +223,15 @@
     font-family: var(--font-family);
     border-radius: 5px;
   }
+
+  dialog {
+    max-height: 400px;
+    width: 60%;
+  }
+  
+  dialog::backdrop {
+     background-color: rgb(0 0 0 / 0.5);
+  transition:
+    background-color 0.7s;
+  }
 }

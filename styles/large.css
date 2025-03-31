@@ -206,3 +206,28 @@
   h1, h2, h3 {
     font-family: var(--header-font);
   }
+
+  dialog {
+    border: 1ppx solid rgb(red, green, blue);
+    max-width: 600px;
+    padding: 12px;
+    border-radius: 5px;
+
+  }
+
+  #closeModal {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    background-color: white;
+    box-shadow: #e1b067;
+  }
+
+  dialog::backdrop {
+     background-color: rgb(0 0 0 / 0.5);
+  transition:
+    background-color 0.7s;
+  }
