@@ -227,11 +227,30 @@
   dialog {
     max-height: 400px;
     width: 60%;
+    animation: bringIn 3s ease-in-out;
   }
   
   dialog::backdrop {
      background-color: rgb(0 0 0 / 0.5);
   transition:
     background-color 0.7s;
+  }
+
+   @keyframes bringIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+
+    }
+    70% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 }
