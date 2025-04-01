@@ -28,13 +28,18 @@
         <link rel="stylesheet" href="styles/base.css" media="print" onload="this.onload=null;this.media='all';">
         <link rel="stylesheet" href="styles/large.css" media="print" onload="this.onload=null;this.media='all';">
         <link rel="stylesheet" href="./styles/home.css" media="print" onload="this.onload=null;this.media='all';">
+        <link rel="stylesheet" href="./styles/join.css" media="print" onload="this.onload=null;this.media='all';">
 
         <link rel="preload" href="./images/slcc-logo.webp" as="image">
         <script src="./scripts/theme.js" defer></script>
-        <script src="./scripts/home.js" defer></script>
+        <script src="./scripts/join.js" defer></script>
 
-        <title>Sierra Leone Chamber of Commerce</title>
-
+        <title>Join the Sierra Leone Chamber of Commerce</title>
+        <script defer>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById("timestamp").value = new Date().toISOString();
+            })
+        </script>
     </head>
 
     <body>
@@ -51,42 +56,85 @@
                 </a>
             </div>
             <nav class="navigation">
-                <a href="index.html" class="active">Home</a>
+                <a href="index.html">Home</a>
                 <a href="./directory.html">Directory</a>
-                <a href="./join.html">Join</a>
+                <a href="./join.html" class="active">Join</a>
                 <a href="#">Discover</a>
             </nav>
             <div id="theme" class="theme-toggle"></div>
         </header>
-        <main id="home-page">
-            <section class="hero">
-                <img src="./images/freetown.webp" alt="">
-                <a class="cta-button" href="https://example.com">Keynote Tickets</a>
-            </section>
-            <h1>Home</h1>
-            <section id="weather">
-                <div class="events">
-                    <h2>Events</h2>
-                    <ul>
-                        <li><strong>Networking Mixer:</strong> Join us for an evening of networking with local business leaders. - March 15,
-                            2025, 6:00 PM - 8:00 PM at the Radisson Blu Mammy Yoko Hotel.</li>
-                        <li><strong>Business Workshop:</strong> Learn strategies for growth and success in the Sierra Leone market. - April 5,
-                            2025, 9:00 AM - 12:00 PM at the Chamber of Commerce Headquarters.</li>
-                        <li><strong>Annual Gala:</strong> Celebrate the achievements of our members at our annual gala. - May 20, 2025, 7:00
-                            PM - 11:00 PM at the Bintumani Conference Centre.</li>
-                        <li><strong>Tech Summit:</strong> Discover the latest technological advancements and their impact on business. - June
-                            10, 2025, 10:00 AM - 4:00 PM at the Freetown International Conference Center.</li>
-                    </ul>
-                </div>
-                    <div class="current"></div>
-                    <div class="forecast">
-                       
-                    </div>
-            </section>
-            <section id="business">
-                <div id="biz-cards"></div>
-            </section>
+        <main id="join-page">
+            <section id="membership-form">
+                <h1>Fill Membership Form</h1>
+                <form action="./thankyou.html" method="GET">
+                    <p id="first-p">All fields with * are required.</p>
+                    <div>
+                        <label for="first_name"><span>First name </span><span aria-label="required">*</span>
+                            <input type="text" title="first" name="first" id="first_name" autocomplete="given-name" />
+                        </label>
 
+                    </div>
+                    <div>
+                        <label for="last_name"><span>Last name </span><span aria-label="required">*</span>
+                            <input type="text" title="last" name="last" id="last_name" autocomplete="family-name" />
+                        </label>
+
+                    </div>
+                    <div>
+                        <label for="organization_title">Organizational title
+                            <input type="text" id="organization_title" name="title" title="organization_title"
+                                autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,}$" />
+                        </label>
+
+                    </div>
+                    <div id="email">
+                        <label for="mail"><span>Email </span><span aria-label="required">*</span>
+                            <input type="email" title="email" name="email" id="mail" autocomplete="email"
+                                placeholder="example@email.com" />
+                        </label>
+
+                    </div>
+                    <div id="telephone">
+                        <label for="phone"><span>Phone </span><span aria-label="required">*</span>
+                            <input type="tel" title="phone_number" name="telephone" id="phone" autocomplete="tel" />
+                        </label>
+
+                    </div>
+                    <div id="org_title">
+                        <label for="organization">Organization name
+                            <input type="text" id="organization" name="business_name" title="organization_title"
+                                autocomplete="organization" />
+                        </label>
+                    </div>
+
+                    <section id="membership">
+                        <label for="level">Membership level
+                            <select name="membership" id="level">
+                                <option value="Select" disabled selected>Select</option>
+                                <option value="NP Membership">NP Membership</option>
+                                <option value="Bronze Membership">Bronze Membership</option>
+                                <option value="Silver Membership">Silver Membership</option>
+                                <option value="Gold Membership">Gold Membership</option>
+                            </select>
+                        </label>
+
+                    </section>
+
+                    <div id="biz-desc">
+                        <label for="description">Describe your business/organization
+                            <textarea name="business_desc" id="description"></textarea>
+                        </label>
+
+                    </div>
+                    <div>
+                        <label for="timestamp"></label>
+                        <input type="hidden" id="timestamp" name="timestamp" value="submit">
+                    </div>
+
+                    <input type="submit" id="submitBtn" value="Register your business">
+                </form>
+            </section>
+            <section id="membership-cards"></section>
         </main>
         <footer>
             <div class="address">

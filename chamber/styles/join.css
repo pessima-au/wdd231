@@ -1,0 +1,249 @@
+body {
+  box-sizing: border-box;
+  font-family: Rooboto;
+}
+
+#first-p {
+  margin-bottom: 25px;
+}
+
+h1 {
+  color: rgb(22, 20, 20);
+  margin: 15px 2%;
+}
+
+form {
+  margin: 3rem 6%;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  color: rgb(22, 20, 20);
+  padding-top: 0.2rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="email"],
+select,
+textarea {
+  display: block;
+  margin: 0.2rem 0 1.2rem 0;
+  /* padding: 0.4rem; */
+  border: 1px solid #686f35;
+  border-radius: 4px;
+  border-left-width: 5px;
+  border-left-color: #86ac0a9c;
+  font-size: 1.2rem;
+  color: rgb(16, 16, 16);
+  width: 250px;
+}
+
+input[type="submit"] {
+  border: 1px solid gray;
+  text-align: center;
+  background-color: #686f35;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+
+#data {
+  background-color: #f4f1de;
+  padding: 0 1rem;
+  border: 1px solid #e07a5f;
+  border-radius: 6px;
+  text-align: center;
+}
+
+#join-page {
+  display: grid;
+  grid-template-columns: 500px auto;
+  grid-template-rows: auto;
+}
+
+#membership-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  row-gap: 10px;
+  column-gap: 25px;
+}
+.membership-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  width: 350px;
+  height: 220px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+dialog {
+  width: 340px;
+  height: 220px;
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  z-index: 1000;
+   background-image: linear-gradient(45deg, rgb(227, 131, 166), rgb(200, 192, 147));
+    background-size: 200% 200%;
+  animation: gradientShift 5s infinite alternate, fadeIn 1.5s ease-in-out;
+  
+   background-color: aquamarine; 
+}
+dialog h2 {
+  font-weight: bolder;
+}
+
+.membership-card.np {
+  background-color: #f4f1de; 
+  color: black;
+  font-weight: bolder;
+}
+
+.membership-card.bronze {
+  background-color: #cd7f32; 
+  color: black;
+  font-weight: bolder;
+}
+
+.membership-card.silver {
+  background-color: #c0c0c0; 
+  color: black;
+  font-weight: bolder;
+}
+
+.membership-card.gold {
+  background-color: #ffd700; 
+  color: black;
+  font-weight: bolder;
+}
+
+.details-btn
+{
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 5px;
+  background-color:beige;
+  margin-top: 50px;
+  color: black;
+  font-weight: bolder;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.close-dialog {
+  cursor: pointer;
+  color: white;
+  float: right;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 36px;
+  transition: background-color 0.3s ease;
+}
+
+dialog h2 {
+  margin-bottom: 15px;
+  font-weight: bolder;
+}
+
+dialog p{
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+dialog ul li {
+  padding: 2px;
+}
+
+.close-dialog:hover {
+  background-color: rgb(171, 209, 58);
+}
+.membership-card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  width: 350px;
+  height: 220px;
+  text-align: center;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.membership-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.2);
+}
+body.dark-theme {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body.dark-theme .card {
+  background-color: #2d2d2d;
+  border-color: #404040;
+}
+
+body.dark-theme header,
+body.dark-theme footer,
+body.dak-them form {
+  color: white;
+  background-color: #121212;
+}
+
+@media (max-width: 768px) {
+  #join-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  dialog {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+  }
+}

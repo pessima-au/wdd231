@@ -1,0 +1,44 @@
+{
+  "memberships": [
+    {
+      "level": "NP Membership",
+      "cost": "Free",
+      "benefits": [
+        "Access to networking events.",
+        "Basic listing in business directory.",
+        "Monthly newsletter subscription."
+      ]
+    },
+    {
+      "level": "Bronze Membership",
+      "cost": "Le1000/year",
+      "benefits": [
+        "All NP Membership benefits.",
+        "Discounts on event tickets.",
+        "Priority business directory listing.",
+        "Access to member-only training sessions."
+      ]
+    },
+    {
+      "level": "Silver Membership",
+      "cost": "Le2500/year",
+      "benefits": [
+        "All Bronze Membership benefits.",
+        "Spotlight feature on Chamber homepage.",
+        "Social media promotions.",
+        "Free attendance to select training workshops."
+      ]
+    },
+    {
+      "level": "Gold Membership",
+      "cost": "Le5000/year",
+      "benefits": [
+        "All Silver Membership benefits.",
+        "Premium spotlight feature on homepage.",
+        "Exclusive advertising opportunities.",
+        "VIP invitations to Chamber events.",
+        "One-on-one business mentoring sessions."
+      ]
+    }
+  ]
+}
