@@ -32,3 +32,11 @@ hamButton.addEventListener("click", () => {
   navigation.classList.toggle("active");
   hamButton.classList.toggle("open");
 });
+
+//timestamp
+            document.addEventListener('DOMContentLoaded', function() {
+              const timestampInput = document.getElementById("timestamp");
+              if (timestampInput) {
+                timestampInput.value = new Date().toISOString();
+              }
+            });

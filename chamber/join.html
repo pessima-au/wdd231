@@ -35,11 +35,6 @@
         <script src="./scripts/join.js" defer></script>
 
         <title>Join the Sierra Leone Chamber of Commerce</title>
-        <script defer>
-            document.addEventListener('DOMContentLoaded', function() {
-                document.getElementById("timestamp").value = new Date().toISOString();
-            })
-        </script>
     </head>
 
     <body>
@@ -70,40 +65,40 @@
                     <p id="first-p">All fields with * are required.</p>
                     <div>
                         <label for="first_name"><span>First name </span><span aria-label="required">*</span>
-                            <input type="text" title="first" name="first" id="first_name" autocomplete="given-name" />
+                            <input type="text" title="first" name="first" id="first_name" autocomplete="given-name" >
                         </label>
 
                     </div>
                     <div>
                         <label for="last_name"><span>Last name </span><span aria-label="required">*</span>
-                            <input type="text" title="last" name="last" id="last_name" autocomplete="family-name" />
+                            <input type="text" title="last" name="last" id="last_name" autocomplete="family-name" >
                         </label>
 
                     </div>
                     <div>
                         <label for="organization_title">Organizational title
                             <input type="text" id="organization_title" name="title" title="organization_title"
-                                autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,}$" />
+                                autocomplete="organization-title" pattern="^[A-Za-z\- ]{7,}$" >
                         </label>
 
                     </div>
                     <div id="email">
                         <label for="mail"><span>Email </span><span aria-label="required">*</span>
                             <input type="email" title="email" name="email" id="mail" autocomplete="email"
-                                placeholder="example@email.com" />
+                                placeholder="example@email.com" >
                         </label>
 
                     </div>
                     <div id="telephone">
                         <label for="phone"><span>Phone </span><span aria-label="required">*</span>
-                            <input type="tel" title="phone_number" name="telephone" id="phone" autocomplete="tel" />
+                            <input type="tel" title="phone_number" name="telephone" id="phone" autocomplete="tel" >
                         </label>
 
                     </div>
                     <div id="org_title">
                         <label for="organization">Organization name
                             <input type="text" id="organization" name="business_name" title="organization_title"
-                                autocomplete="organization" />
+                                autocomplete="organization" >
                         </label>
                     </div>
 
@@ -127,8 +122,7 @@
 
                     </div>
                     <div>
-                        <label for="timestamp"></label>
-                        <input type="hidden" id="timestamp" name="timestamp" value="submit">
+                        <input type="hidden" id="timestamp" name="timestamp" value="timestamp">
                     </div>
 
                     <input type="submit" id="submitBtn" value="Register your business">
