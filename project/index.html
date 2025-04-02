@@ -1,23 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eBook Library</title>
-</head>
-<body>
-    <header>
-        <script src="./scripts/script.js"></script>
-    </header>
-    <main>
-        <h1>📚 eBook Library</h1>
-        <input type="text" id="searchBox" placeholder="Search for books...">
-        <button id="searchBtn">Search</button>
-        
-        <div id="results"></div>
-        
-        
-    </main>
-    <footer></footer>
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-Read Haven</title>
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo">E-Read Haven</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#books">Books</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <input type="text" placeholder="Search books..." class="search-bar">
+            </nav>
+        </header>
+
+        <section id="hero">
+            <h1>Welcome to E-Read Haven</h1>
+            <p>Your digital library for exploring amazing eBooks.</p>
+        </section>
+
+        <section id="books">
+            <h2>Book Collection</h2>
+            <div class="book-grid">
+                <div class="book-item">
+                    <img src="book1.jpg" alt="Book 1">
+                    <p>Book Title 1</p>
+                </div>
+                <div class="book-item">
+                    <img src="book2.jpg" alt="Book 2">
+                    <p>Book Title 2</p>
+                </div>
+                <!-- More books can be added -->
+            </div>
+        </section>
+
+        <section id="recommendations">
+            <h2>Recommended Books</h2>
+            <p>Discover top picks from our community.</p>
+        </section>
+
+        <section id="community">
+            <h2>Community Forum</h2>
+            <p>Join discussions and share your thoughts on books.</p>
+        </section>
+
+        <section id="testimonials">
+            <h2>User Reviews</h2>
+            <p>See what readers are saying about our collection.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 E-Read Haven. All rights reserved.</p>
+        </footer>
+    </body>
+
 </html>

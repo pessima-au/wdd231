@@ -1,0 +1,148 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    color: #333333;
+}
+
+main {
+     font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 2.5rem;
+}
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: #00060f;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+  font-style: normal;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+h3 {
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.mobile h3 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    }
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+ .wireframe-desktop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.wireframe-desktop img {
+    width: 350px;
+    height: 450px;
+
+}
+
+.wireframe-desktop figcaption {
+    text-align: center;
+    margin-top: 0;
+}
+
+figcaption {
+    margin-top: -20px;
+    text-align: center;
+}
+
+
+.wireframe-mobile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wireframe-mobile img {
+    width: 300px;
+    height: 450px;
+}
+
+
+/* Color Schema */
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.olive_green {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 8px;
+    background-color: #424939;
+}
+
+.dark_gray {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 8px;
+    background-color: #333333;
+}
+
+.light_gray {
+     width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    border-radius: 8px;
+    background-color: #F5F5F5;
+    border: 1px solid gray;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    background-color: #333333;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
