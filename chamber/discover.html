@@ -27,12 +27,12 @@
         <link rel="stylesheet" href="./styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css" media="print" onload="this.onload=null;this.media='all';">
         <link rel="stylesheet" href="styles/large.css" media="print" onload="this.onload=null;this.media='all';">
-        <link rel="stylesheet" href="./styles/home.css" media="print" onload="this.onload=null;this.media='all';">
-        <link rel="stylesheet" href="./styles/join.css" media="print" onload="this.onload=null;this.media='all';">
+        <link rel="stylesheet" href="./styles/discover.css" media="print" onload="this.onload=null;this.media='all';">
+
 
         <link rel="preload" href="./images/slcc-logo.webp" as="image">
         <script src="./scripts/theme.js" defer></script>
-        <script src="./scripts/discover.js" type="module" defer></script>
+        <script src="./scripts/discover.js" type="module"></script>
 
         <title>Join the Sierra Leone Chamber of Commerce</title>
     </head>
@@ -60,6 +60,13 @@
         </header>
         <main>
            <div id="places"></div>
+           <aside class="sidebar">
+            <button class="close-button">❌</button>
+            <p id="sidebar-message"></p>
+            <div id="chat-messages"></div>
+            <textarea id="chat-input" placeholder="Type your message..."></textarea>
+            <button id="send-button" type="submit">Chat Now</button>
+           </aside>
         </main>
         <footer>
             <div class="address">
