@@ -90,3 +90,15 @@ function membershipCards(memberships) {
     })
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("form"); // Select the form
+  const timestampInput = document.getElementById("timestamp"); // Select the hidden timestamp input
+
+  if (form && timestampInput) {
+    // Set the timestamp value 
+    form.addEventListener("submit", function (event) {
+      timestampInput.value = new Date().toISOString(); 
+    });
+  }
+});
+

@@ -12,7 +12,6 @@ document.querySelector("#data-display").innerHTML = `
 <p><strong>Business Name: </strong>${myInfo.get("business_name")}</p>
 <p><strong>Membership Level: </strong>${myInfo.get("membership")}</p>
 <p><strong>Business Description: </strong>${myInfo.get("business_desc")}</p>
-<p><strong>Organization Title: </strong>${myInfo.get("business_name")}</p>
 <p><strong>Submit Date: </strong>${myInfo.get("timestamp")}</p>
 `;
 
@@ -33,10 +32,5 @@ hamButton.addEventListener("click", () => {
   hamButton.classList.toggle("open");
 });
 
-//timestamp
-            document.addEventListener('DOMContentLoaded', function() {
-              const timestampInput = document.getElementById("timestamp");
-              if (timestampInput) {
-                timestampInput.value = new Date().toISOString();
-              }
-            });
+
+             
