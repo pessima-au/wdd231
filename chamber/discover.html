@@ -27,14 +27,14 @@
         <link rel="stylesheet" href="./styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css" media="print" onload="this.onload=null;this.media='all';">
         <link rel="stylesheet" href="styles/large.css" media="print" onload="this.onload=null;this.media='all';">
-        <link rel="stylesheet" href="styles/thankyou.css" media="print" onload="this.onload=null;this.media='all';">
+        <link rel="stylesheet" href="./styles/home.css" media="print" onload="this.onload=null;this.media='all';">
+        <link rel="stylesheet" href="./styles/join.css" media="print" onload="this.onload=null;this.media='all';">
 
         <link rel="preload" href="./images/slcc-logo.webp" as="image">
         <script src="./scripts/theme.js" defer></script>
-        <script src="./scripts/thankyou.js" defer></script>
+        <script src="./scripts/discover.js" type="module" defer></script>
 
-        <title>Form Submission - Thank you</title>
-
+        <title>Join the Sierra Leone Chamber of Commerce</title>
     </head>
 
     <body>
@@ -51,18 +51,15 @@
                 </a>
             </div>
             <nav class="navigation">
-                <a href="index.html" class="active">Home</a>
+                <a href="index.html">Home</a>
                 <a href="./directory.html">Directory</a>
                 <a href="./join.html">Join</a>
-                <a href="./discover.html">Discover</a>
+                <a href="./discover.html" class="active">Discover</a>
             </nav>
             <div id="theme" class="theme-toggle"></div>
         </header>
         <main>
-            <p>Thank you for your desire to join the Sierra Leone Chamber of Commerce!</p>
-            <P>You will hear from us in five (5) days.</P>
-            
-            <div id="data-display"></div>
+           <div id="places"></div>
         </main>
         <footer>
             <div class="address">
