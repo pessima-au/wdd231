@@ -13,45 +13,39 @@
             href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Lato&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="./styles/styles.css">
+        <script src="./scripts/script.js" defer></script>
     </head>
 
     <body>
         <header>
-            <a class="logo" href="index.html"><img src="./images/ebook_logo.png" alt="E-Book Haven logo"></a>
+            <a href="index.html" aria-label="E-Book Haven Home Page">
+                <img src="./images/ebook_logo.png" alt="E-Book Haven logo" class="logo">
+            </a>
             <nav class="navigation">
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="#featured-books">Books</a></li>
-                    <li><a href="#community">Community</a></li>
-                </ul>
+                <a href="index.html" class="active">Home</a>
+                <a href="#featured-books">Books</a>
+                <a href="#community">Community</a>
             </nav>
             <div class="search-container">
                 <button class="search-button">🔍</button>
                 <input type="text" placeholder="Search books..." class="search-input">
-               
             </div>
             <button id="menu-toggle" aria-label="Toggle navigation menu"></button>
-            
+
         </header>
         <main>
             <section id="hero">
-                <h1>Welcome to eRead Haven</h1>
+                <h1>Welcome to e-Read Haven</h1>
                 <p>Your digital library for exploring amazing eBooks.</p>
             </section>
             <hr>
 
             <section id="featured-books">
-                <h2>Book Collection</h2>
-                <div class="book-grid">
-                    <div class="book-item">
-                        <img src="./images/book1.jpg" alt="Book 1">
-                        <p>Book Title 1</p>
-                    </div>
-                    <div class="book-item">
-                        <img src="./images/book2.jpg" alt="Book 2">
-                        <p>Book Title 2</p>
-                    </div>
-                    <button class="load-more">Load More</button>
+                <h2>Book Collections</h2>
+                <button id="load-more">Load More Collections</button>
+                <div id="collections-container">
+                   
+                    
                 </div>
             </section>
 

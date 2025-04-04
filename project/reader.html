@@ -4,24 +4,42 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>eBook Reader</title>
-        <link rel="stylesheet" href="styles.css">
+        <meta name="description" content="WDD 231 - Web Frontend Development 1, Albert Pessima, eBook reader hop page.">
+        <meta name="author" content="Course Home Page">
+        <title>E-Read Haven</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Lato&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/reader.css">
+        <script src="./scripts/reader.js" defer></script>
     </head>
 
     <body>
         <header>
-            <script src="./scripts/reader.js"></script>
-        </header>
-        <main>
-            <button onclick="goBack()">⬅ Back</button>
-            <h1 id="bookTitle">Loading...</h1>
-            <div id="reader">
-                <p id="bookContent">Fetching book content...</p>
+            <a href="index.html" aria-label="E-Book Haven Home Page">
+                <img src="./images/ebook_logo.png" alt="E-Book Haven logo" class="logo">
+            </a>
+            <nav class="navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="#featured-books">Books</a>
+                <a href="#community">Community</a>
+            </nav>
+            <div class="search-container">
+                <button class="search-button">🔍</button>
+                <input type="text" placeholder="Search books..." class="search-input">
             </div>
-            <button id="savePosition">Save Position</button>
+            <button id="menu-toggle" aria-label="Toggle navigation menu"></button>
+           
+        </header>
+        <h1>Book Reader</h1>
+        <main id="book-container">
+            <p>Loading book details...</p>
         </main>
         <footer>
-
+            <p>&copy; 2025 E-Read Haven. All rights reserved.</p>
         </footer>
     </body>
 
