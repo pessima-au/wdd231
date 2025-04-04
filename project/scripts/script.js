@@ -1,3 +1,15 @@
+
+const menuToggle = document.getElementById("menu-toggle");
+const navigation = document.querySelector(".navigation ul");
+
+menuToggle.addEventListener("click", () => {
+  navigation.classList.toggle("active");
+});
+
+
+
+
+
 document.getElementById("searchBtn").addEventListener("click", () => {
   const query = document.getElementById("searchBox").value;
   if (query) {
