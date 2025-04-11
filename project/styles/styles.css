@@ -150,8 +150,6 @@ hr {
 
 /* Collections styling */
 
-
-
   #collections-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -220,12 +218,150 @@ hr {
     color: white;
   }
 
-  @media (max-width: 600px) {
+
+
+  /* Recommended section styling */
+  #recommended-section {
+    margin: 0.6rem 0;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+#recommended-section h2 {
+    margin-bottom: 1rem;
+}
+
+#recommended-books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.book-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+}
+
+.book-card {
+    width: 100px;
+    text-align: center;
+}
+
+.book-card img {
+    width: 70%;
+    height: 100px;
+    border-radius: 4px;
+}
+
+.book-card h4 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.book-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.book-card button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.book-card button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Community section styling */
+#community {
+
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  /* width: 50%; */
+}
+
+#community h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.forums {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.discussion {
+  padding: 0.5rem; 
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.discussion p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.truncated-comment {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.full-comment {
+  display: none;
+}
+
+.read-more-btn {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.read-more-btn:hover {
+  background-color: var(--accent-color);
+}
+
+.show-less-btn {
+   background-color: var(--accent-color);
+   color: white;
+   border-radius: 5px;
+}
+
+.reply {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-top: 1px solid #ddd;
+}
+
+.reply p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+ @media (max-width: 600px) {
     .book-thumbs img {
       height: 80px;
     }
   }
-
 
 /* #results {
     display: flex;

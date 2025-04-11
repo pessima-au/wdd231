@@ -1,0 +1,51 @@
+{
+  "discussions": [
+    {
+      "id": 1,
+      "username": "ReaderRachel",
+      "comment_header": "OpenBook Library Integration",
+      "comment": "Has anyone explored the OpenBook Library integration in the app? What are your favorite finds?",
+      "replies_count": 3,
+      "replies": [
+        {
+          "username": "BookwormBen",
+          "reply": "I love the classic literature selection! So easy to access.",
+          "date": "2025-04-10T10:15:00"
+        },
+        {
+          "username": "LiteraryLaura",
+          "reply": "The search function is a game-changer. Found so many new authors.",
+          "date": "2025-04-10T11:30:00"
+        },
+        {
+          "username": "DigitalDave",
+          "reply": "I'm having trouble with the DRM. Anyone else?",
+          "date": "2025-04-10T12:45:00"
+        }
+      ],
+      "truncated": true,
+      "full_comment": "Has anyone explored the OpenBook Library integration in the app? What are your favorite finds? I'm particularly interested in recommendations for historical fiction. The ease of downloading books is fantastic, but I'm curious about other users' experiences."
+    },
+    {
+      "id": 2,
+      "username": "EbookEnthusiast",
+      "comment_header": "Customizing Font Settings",
+      "comment": "What font and size do you use for optimal reading in the app?",
+      "replies_count": 2,
+      "replies": [
+        {
+          "username": "ReadabilityRex",
+          "reply": "I prefer Bookerly at 16pt. Easiest on the eyes.",
+          "date": "2025-04-11T09:00:00"
+        },
+        {
+          "username": "VisionaryVal",
+          "reply": "I use the OpenDyslexic font. Makes a huge difference!",
+          "date": "2025-04-11T10:30:00"
+        }
+      ],
+      "truncated": true,
+      "full_comment": "What font and size do you use for optimal reading in the app? I'm experimenting with different settings to reduce eye strain. Also, has anyone tried the night mode feature extensively? Looking for tips to enhance the reading experience."
+    }
+  ]
+}

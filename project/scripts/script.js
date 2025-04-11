@@ -111,43 +111,220 @@ function openReader(bookKey) {
 }
 
 
-// document.getElementById("searchBtn").addEventListener("click", () => {
-//   const query = document.getElementById("searchBox").value;
-//   if (query) {
-//     fetchBooks(query);
-//   }
-// });
+//Recommended Books Section
+function displayRecommendedBooks() {
+  const recommendedContainer = document.getElementById("recommended-books");
 
-// async function fetchBooks(query) {
-//   const response = await fetch(
-//     `https://openlibrary.org/search.json?q=${query}`
-//   );
-//   const data = await response.json();
+  if (!recommendedContainer) {
+    console.error("Element with ID 'recommended-books' not found.");
+    return;
+  }
 
-//   const resultsContainer = document.getElementById("results");
-//   resultsContainer.innerHTML = "";
+  // Example query for recommended books
+  const recommendedQuery = "bestsellers";
 
-//   data.docs.slice(0, 10).forEach((book) => {
-//     const bookDiv = document.createElement("div");
-//     bookDiv.classList.add("book");
+  fetch(`https://openlibrary.org/search.json?q=${recommendedQuery}`)
+    .then((res) => res.json())
+    .then((data) => {
+      const books = data.docs.slice(0, 3); 
+      const bookHTML = books
+        .map((book) => {
+          const cover = book.cover_i
+            ? `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`
+            : "https://via.placeholder.com/120x180?text=No+Cover";
+          return `
+                    <div class="book-card">
+                        <img src="${cover}" alt="${book.title}" />
+                        <h4>${book.title}</h4>
+                        <p>${
+                          book.author_name
+                            ? book.author_name.join(", ")
+                            : "Unknown Author"
+                        }</p>
+                        <button onclick="openReader('${
+                          book.key
+                        }')">Read</button>
+                    </div>`;
+        })
+        .join("");
 
-//     const coverId = book.cover_i
-//       ? `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`
-//       : "https://via.placeholder.com/100x150?text=No+Cover";
+      recommendedContainer.innerHTML = bookHTML;
+    })
+    .catch((err) => {
+      console.error("Error fetching recommended books:", err);
+      recommendedContainer.innerHTML = `<p>Unable to load recommended books at this time.</p>`;
+    });
+}
 
-//     bookDiv.innerHTML = `
-//             <img src="${coverId}" alt="Book Cover">
-//             <h3>${book.title}</h3>
-//             <p>${
-//               book.author_name ? book.author_name.join(", ") : "Unknown Author"
-//             }</p>
-//             <button onclick="openReader('${book.key}')">Read</button>
-//         `;
+// Call the function to display recommended books
+displayRecommendedBooks();
 
-//     resultsContainer.appendChild(bookDiv);
-//   });
-// }
 
-// function openReader(bookKey) {
-//   window.location.href = `reader.html?book=${bookKey}`;
-// }
+// Community Discussions Section
+// Fetching community discussions from a local JSON file
+// Fetching community discussions from a local JSON file
+fetch("./data/community_discussions.json")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then((data) => {
+    const communitySection = document.getElementById("community");
+    const discussions = data.discussions
+      .map((discussion) => {
+        const repliesHTML = discussion.replies
+          .map(
+            (reply) => `
+      <div class="reply">
+        <p><strong>${reply.username}</strong> (${new Date(
+              reply.date
+            ).toLocaleString()}): ${reply.reply}</p>
+      </div>
+    `
+          )
+          .join("");
+
+        return `
+      <div class="discussion" data-id="${discussion.id}">
+        <p class="comment-header"><strong>${
+          discussion.comment_header
+        }:</strong></p>
+        <div class="collapsed-content">
+          <p class="truncated-comment">${discussion.comment.substring(
+            0,
+            50
+          )}...</p>
+          <button class="read-more-btn" onclick="showFullComment(${
+            discussion.id
+          })">Read More</button>
+        </div>
+        <div class="full-content" style="display: none;">
+          <p class="full-comment">${discussion.comment}</p>
+          <div class="replies">
+            ${repliesHTML}
+          </div>
+          
+          <div class="add-reply" style="display:none;">
+            <textarea id="replyText-${
+              discussion.id
+            }" placeholder="Add your reply..."></textarea>
+            <button onclick="addReply(${discussion.id})">Reply</button>
+          </div>
+          <button class="show-less-btn" onclick="hideFullComment(${
+            discussion.id
+          })">Show Less</button>
+        </div>
+      </div>
+    `;
+      })
+      .join("");
+
+    communitySection.innerHTML += discussions;
+  })
+  .catch((error) => {
+    console.error("Error fetching community discussions:", error);
+    document.getElementById("community").innerHTML =
+      "<p>Unable to load community discussions at this time.</p>";
+  });
+
+function showFullComment(id) {
+  const discussionElement = document.querySelector(
+    `.discussion[data-id="${id}"]`
+  );
+  const collapsedContent = discussionElement.querySelector(".collapsed-content");
+  const fullContent = discussionElement.querySelector(".full-content");
+  const addReplySection = fullContent.querySelector(".add-reply");
+
+  collapsedContent.style.display = "none";
+  fullContent.style.display = "block";
+  addReplySection.style.display = "block"; // Show the reply section
+}
+
+function hideFullComment(id) {
+  const discussionElement = document.querySelector(
+    `.discussion[data-id="${id}"]`
+  );
+  const collapsedContent = discussionElement.querySelector(".collapsed-content");
+  const fullContent = discussionElement.querySelector(".full-content");
+    const addReplySection = fullContent.querySelector(".add-reply");
+
+
+  collapsedContent.style.display = "block";
+  fullContent.style.display = "none";
+    addReplySection.style.display = "none"; // Hide the reply section
+
+}
+
+function addReply(discussionId) {
+  const replyText = document.getElementById(`replyText-${discussionId}`).value;
+  if (replyText.trim() === "") {
+    alert("Reply cannot be empty.");
+    return;
+  }
+
+  const discussionElement = document.querySelector(`.discussion[data-id="${discussionId}"]`);
+  const repliesContainer = discussionElement.querySelector(".replies");
+
+  const newReplyHTML = `
+    <div class="reply">
+      <p><strong>You</strong> (Just now): ${replyText}</p>
+    </div>
+  `;
+
+  repliesContainer.innerHTML += newReplyHTML;
+
+  document.getElementById(`replyText-${discussionId}`).value = "";
+}
+
+  // Updated mapping for discussions
+  // fetch("./data/community_discussions.json")
+  //   .then((response) => {
+  //     if (!response.ok) {
+  //       throw new Error(`HTTP error! status: ${response.status}`);
+  //     }
+  //     return response.json();
+  //   })
+  //   .then((data) => {
+  //     const communitySection = document.getElementById("community");
+  //     const discussions = data.discussions
+  //       .map((discussion) => {
+  //         const repliesHTML = discussion.replies
+  //           .map(
+  //             (reply) => `
+  //       <div class="reply">
+  //         <p><strong>${reply.username}</strong> (${new Date(
+  //               reply.date
+  //             ).toLocaleString()}): ${reply.reply}</p>
+  //       </div>
+  //     `
+  //           )
+  //           .join("");
+
+  //         return `
+  //       <div class="discussion" data-id="${discussion.id}">
+  //         <p class="truncated-comment">${discussion.comment}</p>
+  //         <p class="full-comment" style="display: none;">${
+  //           discussion.full_comment
+  //         }</p>
+  //         ${
+  //           discussion.truncated
+  //             ? `<button class="read-more-btn" onclick="showFullComment(${discussion.id})">Read More</button>`
+  //             : ""
+  //         }
+  //         <div class="replies">
+  //           ${repliesHTML}
+  //         </div>
+  //       </div>
+  //     `;
+  //       })
+  //       .join("");
+
+  //     communitySection.innerHTML += discussions;
+  //   })
+  //   .catch((error) => {
+  //     console.error("Error fetching community discussions:", error);
+  //     document.getElementById("community").innerHTML =
+  //       "<p>Unable to load community discussions at this time.</p>";
+  //   });

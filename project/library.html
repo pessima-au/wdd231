@@ -34,39 +34,28 @@
 
         </header>
         <main>
-            <section id="hero">
-                <h1>Welcome to e-Read Haven</h1>
-                <p>Your digital library for exploring amazing eBooks.</p>
-            </section>
-            <hr>
-
-            <section id="featured-books">
-                <h2>Book Collections</h2>
-                <button id="load-more">Load More Collections</button>
-                <div id="collections-container">
-
-
-                </div>
-            </section>
-
-            <hr>
-            <div class="forums">
-                <section id="recommended-section">
-                    <h2>Recommended Books</h2>
-                    <p>Discover top picks from our community.</p>
-                    <div id="recommended-books"></div>
-                </section>
+            <h1>Explore Our Library</h1>
+            <div id="Search-box">
+                <p>What are you looking for?</p>
                 <div>
-                    <section>
-                        <h2>Community Forum</h2>
-                        <p>Join discussions and share your thoughts on books.</p>
-                        <div id="community"></div>
-                    </section>
+                    <p>Search for titles, authors, or keyword.</p>
+                    <input type="text" id="search-input" placeholder="Search for books...">
+                    <button id="search-button">Search</button>
+                    <select name="genres" id="genres">
+                        <option value="fantasy">Fantasy</option>
+                        <option value="science_fiction">Science Fiction</option>
+                        <option value="mystery">Mystery</option>
+                        <option value="thriller">Thriller</option>
+                        <option value="romance">Romance</option>
+                    </select>
 
-                    <section id="testimonials">
-                        <h2>User Reviews</h2>
-                        <p>See what readers are saying about our collection.</p>
-                    </section>
+                    <select name="ratings" id="ratings">
+                        <option value="5">⭐⭐⭐⭐⭐</option>
+                        <option value="4">⭐⭐⭐⭐</option>
+                        <option value="3">⭐⭐⭐</option>
+                        <option value="2">⭐⭐</option>
+                        <option value="1">⭐</option>
+                    </select>
                 </div>
             </div>
         </main>
