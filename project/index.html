@@ -6,6 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="WDD 231 - Web Frontend Development 1, Albert Pessima, eBook reader hop page.">
         <meta name="author" content="Course Home Page">
+        <meta property="og:title" content="Web Frontend Development Course Project Page">
+        <meta property="og:type" content="website">
+        <meta property="og:image"
+            content="https://raw.githubusercontent.com/pessima-au/wdd231/main/chamber/images/freetown.webp">
+        <meta property="og:url" content="https://pessima-au.github.io/wdd231/chamber/directory.html">
         <title>E-Read Haven</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,24 +19,24 @@
             rel="stylesheet">
         <link rel="stylesheet" href="./styles/styles.css">
         <script src="./scripts/script.js" defer></script>
+        <link rel="icon" href="./images/favicon.ico">
     </head>
 
     <body>
         <header>
+            <button id="menu" aria-label="Toggle navigation menu"></button>
             <a href="index.html" aria-label="E-Book Haven Home Page">
                 <img src="./images/ebook_logo.png" alt="E-Book Haven logo" class="logo">
             </a>
             <nav class="navigation">
                 <a href="index.html" class="active">Home</a>
                 <a href="library.html">Library</a>
-                <a href="#community">Community</a>
+                <a href="community.html">Community</a>
             </nav>
             <div class="search-container">
                 <button class="search-button">🔍</button>
                 <input type="text" placeholder="Search books..." class="search-input">
             </div>
-            <button id="menu-toggle" aria-label="Toggle navigation menu"></button>
-
         </header>
         <main>
             <section id="hero">
@@ -56,19 +61,20 @@
                     <p>Discover top picks from our community.</p>
                     <div id="recommended-books"></div>
                 </section>
-                <div>
+                <div id="community-section">
                     <section>
                         <h2>Community Forum</h2>
                         <p>Join discussions and share your thoughts on books.</p>
                         <div id="community"></div>
                     </section>
-
-                    <section id="testimonials">
-                        <h2>User Reviews</h2>
-                        <p>See what readers are saying about our collection.</p>
-                    </section>
                 </div>
             </div>
+            <hr>
+            <section>
+                <h2>User Reviews</h2>
+                <p>See what readers are saying about our collection.</p>
+                <div id="testimonials"></div>
+            </section>
         </main>
         <footer>
             <p>&copy; 2025 E-Read Haven. All rights reserved.</p>

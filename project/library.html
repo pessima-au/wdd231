@@ -6,6 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="WDD 231 - Web Frontend Development 1, Albert Pessima, eBook reader hop page.">
         <meta name="author" content="Course Home Page">
+        <meta property="og:title" content="Web Frontend Development Course Project Page">
+        <meta property="og:type" content="website">
+        <meta property="og:image"
+            content="https://raw.githubusercontent.com/pessima-au/wdd231/main/chamber/images/freetown.webp">
+        <meta property="og:url" content="https://pessima-au.github.io/wdd231/chamber/directory.html">
         <title>E-Read Haven</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +18,9 @@
             href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Lato&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="./styles/styles.css">
-        <script src="./scripts/script.js" defer></script>
+        <!-- <script src="./scripts/script.js" defer></script> -->
+        <script src="scripts/library.js" defer></script>
+        <link rel="stylesheet" href="styles/library.css">
     </head>
 
     <body>
@@ -22,26 +29,28 @@
                 <img src="./images/ebook_logo.png" alt="E-Book Haven logo" class="logo">
             </a>
             <nav class="navigation">
-                <a href="index.html" class="active">Home</a>
-                <a href="library.html">Library</a>
-                <a href="#community">Community</a>
+                <a href="index.html">Home</a>
+                <a href="library.html" class="active">Library</a>
+                <a href="community.html">Community</a>
             </nav>
             <div class="search-container">
                 <button class="search-button">🔍</button>
                 <input type="text" placeholder="Search books..." class="search-input">
             </div>
-            <button id="menu-toggle" aria-label="Toggle navigation menu"></button>
-
         </header>
         <main>
             <h1>Explore Our Library</h1>
             <div id="Search-box">
-                <p>What are you looking for?</p>
-                <div>
+                <p class="first-para">What are you looking for?</p>
+                <div class="in-search-box">
                     <p>Search for titles, authors, or keyword.</p>
-                    <input type="text" id="search-input" placeholder="Search for books...">
-                    <button id="search-button">Search</button>
+                    <div class="search-bar">
+                        <input type="text" id="search-input" placeholder="Search for books...">
+                        <button id="search-button">Search</button>
+                    </div>
+                   
                     <select name="genres" id="genres">
+                        <option value="none" disabled selected>Select genre</option>
                         <option value="fantasy">Fantasy</option>
                         <option value="science_fiction">Science Fiction</option>
                         <option value="mystery">Mystery</option>
@@ -50,6 +59,7 @@
                     </select>
 
                     <select name="ratings" id="ratings">
+                        <option value="0" disabled selected>Select Rating</option>
                         <option value="5">⭐⭐⭐⭐⭐</option>
                         <option value="4">⭐⭐⭐⭐</option>
                         <option value="3">⭐⭐⭐</option>
@@ -58,6 +68,20 @@
                     </select>
                 </div>
             </div>
+            <hr>
+            <section id="featured-books">
+                <h2>Featured Books</h2>
+                <div id="featured-books-container">
+                    <!-- Featured books will be dynamically added here -->
+                </div>
+            </section>
+            <hr>
+            <section id="search-results">
+                <h2>Search Results</h2>
+                <div id="search-results-container">
+                   
+                </div>
+            </section>
         </main>
         <footer>
             <p>&copy; 2025 E-Read Haven. All rights reserved.</p>

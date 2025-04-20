@@ -7,6 +7,15 @@
 // });
 
 
+// Mobile Menu
+const hamButton = document.querySelector("#menu");
+const navigation = document.querySelector(".navigation");
+
+hamButton.addEventListener("click", () => {
+  navigation.classList.toggle("active");
+  hamButton.classList.toggle("open");
+});
+
 // Fetching book data from Open Library API and displaying it on the page
 
 const collections = [
@@ -277,6 +286,38 @@ function addReply(discussionId) {
 
   document.getElementById(`replyText-${discussionId}`).value = "";
 }
+
+// Example review data
+const userReview = [{
+  username: "JoeMan123",
+  rating: 5,
+  review: "This platform is amazing! I found so many great books to read, and the recommendations are spot on. Highly recommend it to all book lovers!",
+  date: "2025-04-13T10:30:00"
+},
+  {
+  username: "Blacker99",
+    rating: 4,  
+    review: "I love the variety of genres available. The user interface is also very friendly. Just wish there were audiobooks!",
+    date: "2025-04-14T12:15:00"
+  }
+];
+
+// Function to display the review
+function displayUserReview(review) {
+  const testimonialsSection = document.getElementById("testimonials");
+
+  const reviewHTML = `
+    <div class="user-review">
+      <p><strong>${review.username}</strong> (${new Date(review.date).toLocaleDateString()}):</p>
+      <p>Rating: ${"⭐".repeat(review.rating)}</p>
+      <p>${review.review}</p>
+    </div>
+  `;
+  testimonialsSection.innerHTML += reviewHTML;
+}
+
+// Call the function to display the review
+userReview.forEach(review => displayUserReview(review));
 
   // Updated mapping for discussions
   // fetch("./data/community_discussions.json")

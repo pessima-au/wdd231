@@ -1,0 +1,89 @@
+{
+  "discussions": 
+    [
+      {
+        "id": 1,
+        "username": "PageTurnerPro",
+        "comment_header": "Highlighting and Notes",
+        "comment": "How do you organize your highlights and notes?",
+        "replies_count": 2,
+        "replies": [
+          {
+            "username": "AnnotateAce",
+            "reply": "I tag them by theme or character. Helps during re-reads.",
+            "date": "2025-04-10T13:15:00"
+          },
+          {
+            "username": "NoteTakerNina",
+            "reply": "Exporting to PDF makes it super easy to review later.",
+            "date": "2025-04-10T14:00:00"
+          }
+        ],
+        "truncated": true,
+        "full_comment": "How do you organize your highlights and notes in the app? I'm using it for both leisure reading and academic purposes, and I'm starting to accumulate a lot of marked passages. I'd love to hear how others keep things categorized or export their notes for future reference."
+      },
+      {
+        "id": 2,
+        "username": "EbookEnthusiast",
+        "comment_header": "Customizing Font Settings",
+        "comment": "What font and size do you use for optimal reading in the app?",
+        "replies_count": 2,
+        "replies": [
+          {
+            "username": "ReadabilityRex",
+            "reply": "I prefer Bookerly at 16pt. Easiest on the eyes.",
+            "date": "2025-04-11T09:00:00"
+          },
+          {
+            "username": "VisionaryVal",
+            "reply": "I use the OpenDyslexic font. Makes a huge difference!",
+            "date": "2025-04-11T10:30:00"
+          }
+        ],
+        "truncated": true,
+        "full_comment": "What font and size do you use for optimal reading in the app? I'm experimenting with different settings to reduce eye strain, especially during longer sessions. Also, has anyone tried the night mode feature extensively? I'm wondering how much of a difference it makes in low-light conditions and overall comfort."
+      },
+      {
+        "id": 3,
+        "username": "ChapterChaser",
+        "comment_header": "Night Mode vs Sepia Mode",
+        "comment": "Which one do you prefer for long reading sessions?",
+        "replies_count": 2,
+        "replies": [
+          {
+            "username": "DarkModeDiva",
+            "reply": "Night mode all the way. Easier on the eyes at night.",
+            "date": "2025-04-12T14:45:00"
+          },
+          {
+            "username": "SepiaSavvy",
+            "reply": "Sepia gives me a paper-like feel. Perfect during the day.",
+            "date": "2025-04-12T15:10:00"
+          }
+        ],
+        "truncated": true,
+        "full_comment": "Which one do you prefer for long reading sessions—night mode or sepia mode? I've been switching between them and can't decide which is better overall. Night mode is great for evenings, but sepia has that warm, paper-like tone. Curious if anyone has found one to be better for battery life or eye comfort over time."
+      },
+      {
+        "id": 4,
+        "username": "LibraryNomad",
+        "comment_header": "Syncing Reading Progress",
+        "comment": "Is there a way to sync between devices?",
+        "replies_count": 2,
+        "replies": [
+          {
+            "username": "TechieTales",
+            "reply": "Yes! You just need to enable cloud sync in settings.",
+            "date": "2025-04-13T08:20:00"
+          },
+          {
+            "username": "OfflineReader",
+            "reply": "Only works with Wi-Fi, I think. Doesn't sync over mobile data for me.",
+            "date": "2025-04-13T09:05:00"
+          }
+        ],
+        "truncated": true,
+        "full_comment": "Is there a way to sync reading progress between devices? I usually read on my tablet at home and switch to my phone when I'm out, but it's frustrating to lose my place. I'm hoping there's a feature or setting I'm missing that could keep everything in sync automatically, even across platforms."
+      }
+    ]
+}
